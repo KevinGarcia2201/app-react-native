@@ -46,30 +46,24 @@ export default function App() {
             <Text style={style.CUADRO4}>4</Text>
           </View>
         </View>
-
-        <View style={style.BORDER}>
+        <View style={style.BORDER2}>
           <View style={style.CUADRO5}>
-            <Text style={style.CUADRO5}>data 1</Text>
+            <Text style={style.LETRA}>data 1</Text>
           </View>
-
           <View style={style.CUADRO5}>
-            <Text style={style.CUADRO5}>cinoc</Text>
+            <Text style={style.LETRA}>cinoc</Text>
           </View>
-
           <View style={style.CUADRO6}>
-            <Text style={style.CUADRO6}>data 2</Text>
+            <Text style={style.LETRA}>data 2</Text>
           </View>
-
           <View style={style.CUADRO6}>
-            <Text style={style.CUADRO6}>cinoc</Text>
+            <Text style={style.LETRA}>cinoc</Text>
           </View>
-
           <View style={style.CUADRO7}>
-            <Text style={style.CUADRO7}>data 3</Text>
+            <Text style={style.LETRA}>data 3</Text>
           </View>
-
           <View style={style.CUADRO7}>
-            <Text style={style.CUADRO7}>cinoc</Text>
+            <Text style={style.LETRA}>cinoc</Text>
           </View>
         </View>
       </SafeAreaView>
@@ -122,32 +116,42 @@ const style = StyleSheet.create({
   CUADRO5: {
     backgroundColor: '#142EED',
     height: 60,
-    color: '#ffffff',
-    fontSize: 25,
-    textAlign: 'center',
     marginRight: '30%',
     marginLeft: '30%',
   },
   CUADRO6: {
     backgroundColor: '#142EED',
     height: 60,
-    color: '#ffffff',
-    fontSize: 25,
-    textAlign: 'center',
     marginRight: '3%',
-    marginLeft: '40%',
+    marginLeft: '50%',
   },
   CUADRO7: {
     backgroundColor: '#142EED',
-    height: 60,
-    color: '#ffffff',
-    fontSize: 25,
-    textAlign: 'center',
-    marginRight: '40%',
+    marginRight: '50%',
     marginLeft: '3%',
+    height: 60,
+  },
+
+  LETRA: {
+    color: '#ffffff',
+    textAlign: 'center',
+    fontSize: 25,
   },
 
   BORDER: {
-    rgba: (51, 56, 57, 1),
+    borderWidth: 4,
+    marginTop: 10,
+    margin: 20,
+  },
+
+  BORDER2: {
+    borderWidth: 4,
+    marginTop: 10,
+    height: '60%',
+    margin: 20,
+  },
+
+  margen: {
+    marginTop: 8,
   },
 });
