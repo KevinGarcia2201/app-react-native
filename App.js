@@ -48,22 +48,13 @@ export default function App() {
         </View>
         <View style={style.BORDER2}>
           <View style={style.CUADRO5}>
-            <Text style={style.LETRA}>data 1</Text>
-          </View>
-          <View style={style.CUADRO5}>
-            <Text style={style.LETRA}>cinoc</Text>
+            <Text style={style.LETRA}>data 1 {'\n'} cinoc</Text>
           </View>
           <View style={style.CUADRO6}>
-            <Text style={style.LETRA}>data 2</Text>
-          </View>
-          <View style={style.CUADRO6}>
-            <Text style={style.LETRA}>cinoc</Text>
+            <Text style={style.LETRA}>data 2 {'\n'} cinoc</Text>
           </View>
           <View style={style.CUADRO7}>
-            <Text style={style.LETRA}>data 3</Text>
-          </View>
-          <View style={style.CUADRO7}>
-            <Text style={style.LETRA}>cinoc</Text>
+            <Text style={style.LETRA}>data 3 {'\n'} cinoc</Text>
           </View>
         </View>
       </SafeAreaView>
@@ -118,18 +109,21 @@ const style = StyleSheet.create({
     height: 60,
     marginRight: '30%',
     marginLeft: '30%',
+    marginTop: 8,
   },
   CUADRO6: {
     backgroundColor: '#142EED',
     height: 60,
     marginRight: '3%',
     marginLeft: '50%',
+    marginTop: 8,
   },
   CUADRO7: {
     backgroundColor: '#142EED',
     marginRight: '50%',
     marginLeft: '3%',
     height: 60,
+    marginTop: 8,
   },
 
   LETRA: {
