@@ -30,19 +30,19 @@ export default function App() {
     <>
       <SafeAreaView>
         <View style={style.BORDER}>
-          <View style={style.CUADRO1}>
-            <Text style={style.CUADRO1}>1</Text>
+          <View style={style.CUADRO1.height}>
+            <Text style={style.CUADRO1.LETRA}>1</Text>
           </View>
 
-          <View style={style.CUADRO2}>
-            <Text style={style.CUADRO2}>2</Text>
+          <View style={style.CUADRO2.height}>
+            <Text style={style.CUADRO2.LETRA}>2</Text>
           </View>
 
-          <View style={style.CUADRO3}>
-            <Text style={style.CUADRO3}>3</Text>
+          <View style={style.CUADRO3.height}>
+            <Text style={style.CUADRO3.LETRA}>3</Text>
           </View>
 
-          <View style={style.CUADRO4}>
+          <View style={style.CUADRO4.height}>
             <Text style={style.CUADRO4}>4</Text>
           </View>
         </View>
@@ -63,9 +63,12 @@ export default function App() {
 }
 
 const style = StyleSheet.create({
+  height: {
+    height: 30,
+  },
+
   CUADRO1: {
     backgroundColor: '#142EED',
-    height: 30,
     color: '#ffffff',
     fontSize: 25,
     textAlign: 'center',
@@ -75,7 +78,6 @@ const style = StyleSheet.create({
   },
   CUADRO2: {
     backgroundColor: '#142EED',
-    height: 30,
     color: '#ffffff',
     fontSize: 25,
     textAlign: 'center',
@@ -85,7 +87,6 @@ const style = StyleSheet.create({
 
   CUADRO3: {
     backgroundColor: '#142EED',
-    height: 30,
     color: '#ffffff',
     fontSize: 25,
     textAlign: 'center',
@@ -95,7 +96,6 @@ const style = StyleSheet.create({
 
   CUADRO4: {
     backgroundColor: '#142EED',
-    height: 30,
     color: '#ffffff',
     fontSize: 25,
     textAlign: 'center',
